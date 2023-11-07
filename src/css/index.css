@@ -30,8 +30,7 @@ body {
   clip-path: circle(80% at 100% 50%);
 }
 .banner-bg {
-  /* background-image: url(../assets/banner.jpeg); */
-  background-image: url(http://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/resort/wp-content/uploads/sites/5/2022/05/parallax16.jpg);
+  background-image: url(../assets/banner.jpeg);
 }
 .news-bg {
   background-image: url(../assets/bg.png);
