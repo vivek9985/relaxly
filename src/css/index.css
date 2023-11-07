@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cac7c7;
+  border-radius: 2rem;
+  border-right: 0.3rem;
+  border-style: solid;
+  border-color: transparent;
+  background-clip: content-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+.clip {
+  clip-path: circle(80% at 100% 50%);
+}
+.banner-bg {
+  /* background-image: url(../assets/banner.jpeg); */
+  background-image: url(http://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/resort/wp-content/uploads/sites/5/2022/05/parallax16.jpg);
+}
+.news-bg {
+  background-image: url(../assets/bg.png);
+}
+
+.animation-play-btn span {
+  animation: pulsanimate 4s ease-out infinite;
+  animation-delay: calc(1s * var(--i));
+}
+
+@keyframes pulsanimate {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}

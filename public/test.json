@@ -1,0 +1,137 @@
+[
+    {
+    "title": "Deluxe Single Room",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/06012023120606-900x700-6-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 200,
+    "discount_price": 0,
+    "adult": 1,
+    "child": 0,
+    "discount": 0
+    },
+    {
+    "title": "Deluxe Family Suite",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 1200,
+    "discount_price": 1200,
+    "adult": 2,
+    "child": 2,
+    "discount": 30
+    },
+    {
+    "title": "Honeymoon Suite",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 1000,
+    "discount_price": 1200,
+    "adult": 2,
+    "child": 0,
+    "discount": 10
+    },
+    {
+    "title": "Twin Premium Roomr",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 1200,
+    "discount_price": 1600,
+    "adult": 2,
+    "child": 2,
+    "discount": 40
+    },
+    {
+    "title": "Balcony Executive Room",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/09012023045859-900x700-9-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 400,
+    "discount_price": 0,
+    "adult": 1,
+    "child": 0,
+    "discount": 0
+    },
+    {
+    "title": "Superior Premium Room",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "https://relaxly.themeposh.net/public/media/09012023045943-900x700-20-room.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 1300,
+    "discount_price": 1500,
+    "adult": 2,
+    "child": 2,
+    "discount": 20
+    },
+    {
+    "title": "Garden Room",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "http://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/resort/wp-content/uploads/sites/5/2022/05/shop01.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 1100,
+    "discount_price": 900,
+    "adult": 2,
+    "child": 1,
+    "discount": 10
+    },
+    {
+    "title": "Small Premium Room",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "http://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/resort/wp-content/uploads/sites/5/2022/04/room-03-1024x664.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 600,
+    "discount_price": 0,
+    "adult": 2,
+    "child": 0,
+    "discount": 0
+    },
+    {
+    "title": "Apartment",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione dolorem dolor nostrum dolorum necessitatibus a inventore fugit, quis ab sit suscipit laborum eligendi eaque! Porro in deleniti ad sed corporis consequuntur quos, numquam totam alias vero neque eum aliquam reprehenderit obcaecati accusamus ex atque omnis quidem rem distinctio veniam architecto.",
+    "image": "http://www.nicdarkthemes.com/themes/hotel-booking/wp/demo/family-resort/wp-content/uploads/sites/15/2023/07/room-03-1024x683.jpg",
+    "gallery": {
+        "img_one": "https://relaxly.themeposh.net/public/media/06012023120557-900x700-3-room.jpg",
+        "img_two": "https://relaxly.themeposh.net/public/media/09012023045928-900x700-16-room.jpg",
+        "img_three": "https://relaxly.themeposh.net/public/media/06012023120550-900x700-1-room.jpg"
+    },
+    "price": 800,
+    "discount_price": 1000,
+    "adult": 2,
+    "child": 1,
+    "discount": 15
+    }
+]
