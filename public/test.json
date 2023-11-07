@@ -14,7 +14,8 @@
     "child": 0,
     "discount": 0,
     "room_size": "Small, 6 x 8, 2.28 x 2.44",
-    "reviews": 234
+    "reviews": 234,
+    "availability": "availabile"
     },
     {
     "title": "Deluxe Family Suite",
@@ -31,7 +32,8 @@
     "child": 2,
     "discount": 30,
     "room_size": "Large, 12 x 16, 3.65 x 4.87",
-    "reviews": 53
+    "reviews": 53,
+    "availability": "availabile"
     },
     {
     "title": "Honeymoon Suite",
@@ -48,7 +50,8 @@
     "child": 0,
     "discount": 10,
     "room_size": "Medium, 8 x 10, 2.44 x 3.04",
-    "reviews": 723
+    "reviews": 723,
+    "availability": "availabile"
     },
     {
     "title": "Twin Premium Roomr",
@@ -65,7 +68,8 @@
     "child": 2,
     "discount": 40,
     "room_size": "Large, 12 x 16, 3.65 x 4.87",
-    "reviews": 534
+    "reviews": 534,
+    "availability": "availabile"
     },
     {
     "title": "Balcony Executive Room",
@@ -82,7 +86,8 @@
     "child": 0,
     "discount": 0,
     "room_size": "Small, 6 x 8, 2.28 x 2.44",
-    "reviews": 803
+    "reviews": 803,
+    "availability": "availabile"
     },
     {
     "title": "Superior Premium Room",
@@ -99,7 +104,8 @@
     "child": 2,
     "discount": 20,
     "room_size": "Large, 12 x 16, 3.65 x 4.87",
-    "reviews": 231
+    "reviews": 231,
+    "availability": "availabile"
     },
     {
     "title": "Garden Room",
@@ -116,7 +122,8 @@
     "child": 1,
     "discount": 10,
     "room_size": "Medium, 8 x 10, 2.44 x 3.04",
-    "reviews": 435
+    "reviews": 435,
+    "availability": "availabile"
     },
     {
     "title": "Small Premium Room",
@@ -133,7 +140,8 @@
     "child": 0,
     "discount": 0,
     "room_size": "Small, 6 x 8, 2.28 x 2.44",
-    "reviews": 545
+    "reviews": 545,
+    "availability": "availabile"
     },
     {
     "title": "Apartment",
@@ -150,6 +158,7 @@
     "child": 1,
     "discount": 15,
     "room_size": "Medium, 8 x 10, 2.44 x 3.04",
-    "reviews": 274
+    "reviews": 274,
+    "availability": "availabile"
     }
 ]

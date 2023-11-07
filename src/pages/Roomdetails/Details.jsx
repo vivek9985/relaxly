@@ -22,8 +22,11 @@ const Details = () => {
           ) : (
             <div></div>
           )}
-          <h2 className="mt-10 text-2xl font-semibold text-gray-700">
-            {data.title}
+          <h2 className="mt-10 font-medium">
+            <span className="text-2xl font-semibold text-gray-700">
+              {data.title}{" "}
+            </span>
+            (<span className="text-green-600 text-xl">{data.availability}</span>)
           </h2>
           <div className="flex items-center mt-4 mb-3">
             <p className="text-xl text-red-500 font-semibold">${data.price} </p>
@@ -41,7 +44,8 @@ const Details = () => {
               <p className="text-lg font-medium mb-2 text-gray-900">
                 Special Offer :{" "}
                 <span className="text-red-500 font-semibold">
-                  {data.discount}% <span className="text-green-700 font-medium">off</span>
+                  {data.discount}%{" "}
+                  <span className="text-green-600 font-medium">off</span>
                 </span>
               </p>
             ) : (
@@ -78,11 +82,11 @@ const Details = () => {
           <p className="text-gray-500 mt-6 pr-2">{data.description}</p>
           {user ? (
             <button className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
-              Book Now
+              <Link>Check out</Link>
             </button>
           ) : (
-            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8">
-              <Link to="/login">Book Now</Link>
+            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
+              <Link to="/login">Check out</Link>
             </button>
           )}
         </div>
