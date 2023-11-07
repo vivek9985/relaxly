@@ -16,15 +16,24 @@ const Details = () => {
             {data.title}
           </h2>
           <div className="flex items-center my-4">
-            <p className="text-xl font-semibold">${data.price} </p>
+            <p className="text-xl text-red-500 font-semibold">${data.price} </p>
             <p className="text-lg text-gray-800 font-medium">/Night</p>
             {data?.discount_price ? (
-              <p className="text-lg font-semibold ml-4 text-red-500 line-through">
+              <p className="text-lg font-semibold text-gray-700 ml-4 line-through">
                 ${data.discount_price}
               </p>
             ) : (
               <p></p>
             )}
+          </div>
+          <div className="grid grid-cols-3 text-lg">
+            <div className="flex items-center gap-3 font-medium">
+              <p>Adult : {data.adult}</p>
+              <p>Child : {data.child}</p>
+            </div>
+            <div>
+              <h2 className="text-gray-800 font-medium">Reviews : {data.reviews}</h2>
+            </div>
           </div>
         </div>
         <div className="mt-8">
