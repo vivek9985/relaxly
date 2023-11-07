@@ -9,6 +9,7 @@ import Aboutus from "../pages/About/Aboutus";
 import Details from "../pages/Roomdetails/Details";
 import Contact from "../pages/Contact/Contact";
 import Testimonials from "../pages/Testimonials/Testimonials";
+import MyBookings from "../pages/MyBookings/MyBookings";
 
 const router = createBrowserRouter([
   {
@@ -44,13 +45,13 @@ const router = createBrowserRouter([
       {
         path: "/rooms/:id",
         element: <Details></Details>,
-        // loader:({params})=>fetch(`http://localhost:4000/rooms/${params.id}`)
+        loader:({params})=>fetch(`http://localhost:4000/rooms/${params.id}`)
       },
       {
         path: "/bookings",
         element: (
           <Privateroute>
-            <h3>This is Booking page.</h3>
+            <MyBookings></MyBookings>
           </Privateroute>
         ),
       },

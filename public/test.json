@@ -12,7 +12,9 @@
     "discount_price": 0,
     "adult": 1,
     "child": 0,
-    "discount": 0
+    "discount": 0,
+    "room_size": "Small, 6 x 8, 2.28 x 2.44",
+    "reviews": 234
     },
     {
     "title": "Deluxe Family Suite",
@@ -27,7 +29,9 @@
     "discount_price": 1200,
     "adult": 2,
     "child": 2,
-    "discount": 30
+    "discount": 30,
+    "room_size": "Large, 12 x 16, 3.65 x 4.87",
+    "reviews": 53
     },
     {
     "title": "Honeymoon Suite",
@@ -42,7 +46,9 @@
     "discount_price": 1200,
     "adult": 2,
     "child": 0,
-    "discount": 10
+    "discount": 10,
+    "room_size": "Medium, 8 x 10, 2.44 x 3.04",
+    "reviews": 723
     },
     {
     "title": "Twin Premium Roomr",
@@ -57,7 +63,9 @@
     "discount_price": 1600,
     "adult": 2,
     "child": 2,
-    "discount": 40
+    "discount": 40,
+    "room_size": "Large, 12 x 16, 3.65 x 4.87",
+    "reviews": 534
     },
     {
     "title": "Balcony Executive Room",
@@ -72,7 +80,9 @@
     "discount_price": 0,
     "adult": 1,
     "child": 0,
-    "discount": 0
+    "discount": 0,
+    "room_size": "Small, 6 x 8, 2.28 x 2.44",
+    "reviews": 803
     },
     {
     "title": "Superior Premium Room",
@@ -87,7 +97,9 @@
     "discount_price": 1500,
     "adult": 2,
     "child": 2,
-    "discount": 20
+    "discount": 20,
+    "room_size": "Large, 12 x 16, 3.65 x 4.87",
+    "reviews": 231
     },
     {
     "title": "Garden Room",
@@ -102,7 +114,9 @@
     "discount_price": 900,
     "adult": 2,
     "child": 1,
-    "discount": 10
+    "discount": 10,
+    "room_size": "Medium, 8 x 10, 2.44 x 3.04",
+    "reviews": 435
     },
     {
     "title": "Small Premium Room",
@@ -117,7 +131,9 @@
     "discount_price": 0,
     "adult": 2,
     "child": 0,
-    "discount": 0
+    "discount": 0,
+    "room_size": "Small, 6 x 8, 2.28 x 2.44",
+    "reviews": 545
     },
     {
     "title": "Apartment",
@@ -132,6 +148,8 @@
     "discount_price": 1000,
     "adult": 2,
     "child": 1,
-    "discount": 15
+    "discount": 15,
+    "room_size": "Medium, 8 x 10, 2.44 x 3.04",
+    "reviews": 274
     }
 ]

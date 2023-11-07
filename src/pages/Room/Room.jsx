@@ -11,13 +11,15 @@ const Room = () => {
         {datas.map((data) => (
           <div key={data._id} className="data">
             <div className="p-4 border border-red-300">
-              <div className="">
+              <div>
                 <div className="overflow-hidden relative">
-                  <img
-                    src={data.image}
-                    alt="image"
-                    className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
-                  />
+                  <Link to={`/rooms/${data._id}`}>
+                    <img
+                      src={data.image}
+                      alt="image"
+                      className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                    />
+                  </Link>
                   {data?.discount ? (
                     <div className="text-gray-700 font-bold bg-red-300 p-2 absolute top-5 right-0">
                       {data.discount}% off
@@ -42,7 +44,10 @@ const Room = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-2">
-                <Link to={`/rooms/${data._id}`} className="text-[17px] rounded-tr-xl bg-red-500 hover:bg-green-500 transition-all duration-500 text-white px-3 py-1">
+                <Link
+                  to={`/rooms/${data._id}`}
+                  className="text-[17px] rounded-tr-xl bg-red-500 hover:bg-green-500 transition-all duration-500 text-white px-3 py-1"
+                >
                   Details
                 </Link>
                 <div className="flex items-center gap-3 text-base font-medium">
