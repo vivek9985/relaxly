@@ -46,7 +46,7 @@ const router = createBrowserRouter([
           fetch(`http://localhost:4000/rooms/${params.id}`),
       },
       {
-        path: "/bookings",
+        path: "/mybookings",
         element: (
           <Privateroute>
             <MyBookings></MyBookings>

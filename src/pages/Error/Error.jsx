@@ -1,4 +1,3 @@
-import { Player } from "@lottiefiles/react-lottie-player";
 import { Link } from "react-router-dom";
 
 const Error = () => {

@@ -6,7 +6,6 @@ import { GiPhone } from "react-icons/Gi";
 import logo from "../../assets/logo.png";
 import { BiSolidUserCircle } from "react-icons/Bi";
 import { AuthContext } from "../../Authprovider/Authprovider";
-import Testimonial from './../Testimonial/Testimonial';
 
 const Header = () => {
   const [open, setOpern] = useState(false);
@@ -64,14 +63,18 @@ const Header = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="/bookings"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "text-gray-800 hover:text-red-500"
-          }
-        >
-          My bookings
-        </NavLink>
+        {user ? (
+          <NavLink
+            to="/mybookings"
+            className={({ isActive }) =>
+              isActive ? "text-red-500" : "text-gray-800 hover:text-red-500"
+            }
+          >
+            My bookings
+          </NavLink>
+        ) : (
+          <NavLink></NavLink>
+        )}
       </li>
     </>
   );
