@@ -82,7 +82,7 @@ const Details = () => {
           <p className="text-gray-500 mt-6 pr-2">{data.description}</p>
           {user ? (
             <button className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
-              <Link>Check out</Link>
+              <Link to="/checkout">Check out</Link>
             </button>
           ) : (
             <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
