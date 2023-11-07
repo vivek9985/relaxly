@@ -10,16 +10,13 @@ import Details from "../pages/Roomdetails/Details";
 import Contact from "../pages/Contact/Contact";
 import Testimonials from "../pages/Testimonials/Testimonials";
 import MyBookings from "../pages/MyBookings/MyBookings";
+import Error from "../pages/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    errorElement: (
-      <h3 className="text-6xl font-extrabold text-center mt-60">
-        404 Not Found
-      </h3>
-    ),
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -31,21 +28,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact></Contact>
+        element: <Contact></Contact>,
       },
       {
         path: "/testimonials",
-        element: <Testimonials></Testimonials>
+        element: <Testimonials></Testimonials>,
       },
       {
         path: "/rooms",
         element: <Room></Room>,
-        loader:()=>fetch("http://localhost:4000/rooms")
+        loader: () => fetch("http://localhost:4000/rooms"),
       },
       {
         path: "/rooms/:id",
         element: <Details></Details>,
-        loader:({params})=>fetch(`http://localhost:4000/rooms/${params.id}`)
+        loader: ({ params }) =>
+          fetch(`http://localhost:4000/rooms/${params.id}`),
       },
       {
         path: "/bookings",

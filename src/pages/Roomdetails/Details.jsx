@@ -81,7 +81,7 @@ const Details = () => {
               Book Now
             </button>
           ) : (
-            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium">
+            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8">
               <Link to="/login">Book Now</Link>
             </button>
           )}
