@@ -25,12 +25,24 @@ const Details = () => {
           <h2 className="mt-10 text-2xl font-semibold text-gray-700">
             {data.title}
           </h2>
-          <div className="flex items-center my-4">
+          <div className="flex items-center mt-4 mb-3">
             <p className="text-xl text-red-500 font-semibold">${data.price} </p>
             <p className="text-lg text-gray-800 font-medium">/Night</p>
             {data?.discount_price ? (
               <p className="text-lg font-semibold text-gray-700 ml-4 line-through">
                 ${data.discount_price}
+              </p>
+            ) : (
+              <p></p>
+            )}
+          </div>
+          <div>
+            {data?.discount_price ? (
+              <p className="text-lg font-medium mb-2 text-gray-900">
+                Special Offer :{" "}
+                <span className="text-red-500 font-semibold">
+                  {data.discount}% <span className="text-green-700 font-medium">off</span>
+                </span>
               </p>
             ) : (
               <p></p>
@@ -65,11 +77,11 @@ const Details = () => {
           </div>
           <p className="text-gray-500 mt-6 pr-2">{data.description}</p>
           {user ? (
-            <button className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-8">
+            <button className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
               Book Now
             </button>
           ) : (
-            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8">
+            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium">
               <Link to="/login">Book Now</Link>
             </button>
           )}
