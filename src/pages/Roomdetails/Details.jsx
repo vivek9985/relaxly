@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import star from "../../assets/star.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
+import toast from "react-hot-toast";
 
 const Details = () => {
   const { user } = useContext(AuthContext);
@@ -12,19 +13,31 @@ const Details = () => {
     const form = e.target;
     const checkIn = form.checkIn.value;
     const checkOut = form.checkOut.value;
-    const userName = form.name.value;
-    const userEmail = form.email.value;
-    const userProfile = form.photo.value;
+    const name = form.name.value;
+    const email = form.email.value;
+    const profile = form.photo.value;
     const booking = {
       roomImage: data.image,
       roomName: data.title,
       checkIn,
       checkOut,
-      userName,
-      userEmail,
-      userProfile,
+      name,
+      email,
+      profile,
     };
-    console.log(booking);
+    fetch("http://localhost:4000/bookings", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast.success("Successfully Booked!");
+        form.reset();
+      });
   };
 
   return (
