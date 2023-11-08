@@ -10,8 +10,8 @@ import Details from "../pages/Roomdetails/Details";
 import Contact from "../pages/Contact/Contact";
 import Testimonials from "../pages/Testimonials/Testimonials";
 import MyBookings from "../pages/MyBookings/MyBookings";
+import Dateupdate from "../pages/Dateupdate/Dateupdate";
 import Error from "../pages/Error/Error";
-import Checkout from "../pages/Checkout/Checkout";
 
 const router = createBrowserRouter([
   {
@@ -55,14 +55,14 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/checkout/:id",
+        path: "/mybookings/:id",
         element: (
           <Privateroute>
-            <Checkout></Checkout>
+            <Dateupdate></Dateupdate>
           </Privateroute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/checkout/${params.id}`),
+          fetch(`http://localhost:4000/bookings/${params.id}`),
       },
       {
         path: "/login",
