@@ -3,6 +3,7 @@ import { FcGoogle } from "react-icons/Fc";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/Ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const [password, setPassword] = useState("");
@@ -23,6 +24,7 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
+        toast.success("Registration success");
         updateProfile(res.user, {
           displayName: name,
           photoURL: photo

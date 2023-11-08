@@ -3,6 +3,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/Ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -23,6 +24,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
+        toast.error(error.message);
       });
   };
   return (
