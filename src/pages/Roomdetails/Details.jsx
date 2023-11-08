@@ -9,10 +9,22 @@ const Details = () => {
 
   const bookHandler = (e) => {
     e.preventDefault();
-    console.log("first");
     const form = e.target;
-    const checkIn = form.checkin.value;
-    console.log(checkIn)
+    const checkIn = form.checkIn.value;
+    const checkOut = form.checkOut.value;
+    const userName = form.name.value;
+    const userEmail = form.email.value;
+    const userProfile = form.photo.value;
+    const booking = {
+      roomImage: data.image,
+      roomName: data.title,
+      checkIn,
+      checkOut,
+      userName,
+      userEmail,
+      userProfile,
+    };
+    console.log(booking);
   };
 
   return (
@@ -90,44 +102,75 @@ const Details = () => {
             </h2>
           </div>
           <p className="text-gray-500 mt-6 pr-2">{data.description}</p>
-          <form className="grid grid-cols-2 gap-7 mt-10">
-            <div>
+          <form onSubmit={bookHandler} className="grid grid-cols-2 gap-7 mt-10">
+            <div className="col-span-2 md:col-span-1">
               <label className="block mb-2 text-lg font-medium text-gray-900">
                 Check in
               </label>
               <input
                 type="date"
-                name="checkin"
-                id="checkin"
+                name="checkIn"
                 className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
-                placeholder="room's name"
                 required
               />
             </div>
-            <div>
+            <div className="col-span-2 md:col-span-1">
               <label className="block mb-2 text-lg font-medium text-gray-900">
                 Check out
               </label>
               <input
                 type="date"
-                name="checkout"
-                id="checkout"
+                name="checkOut"
                 className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
-                placeholder="room's name"
+                required
+              />
+            </div>
+            <div className="col-span-2 md:col-span-1">
+              <label className="block mb-2 text-lg font-medium text-gray-900">
+                User Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                defaultValue={user?.displayName}
+                className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
+                required
+              />
+            </div>
+            <div className="col-span-2 md:col-span-1">
+              <label className="block mb-2 text-lg font-medium text-gray-900">
+                User Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                defaultValue={user?.email}
+                className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
+                required
+              />
+            </div>
+            <div className="col-span-2">
+              <label className="block mb-2 text-lg font-medium text-gray-900">
+                User profile
+              </label>
+              <input
+                type="url"
+                name="photo"
+                defaultValue={user?.photoURL}
+                className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
                 required
               />
             </div>
             <div>
               {user ? (
                 <button
-                  onClick={bookHandler}
                   type="submit"
-                  className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-4 bebas tracking-widest"
+                  className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-5 md:px-8 text-xl text-white font-medium mt-4 bebas tracking-widest "
                 >
                   Book Now
                 </button>
               ) : (
-                <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-4 bebas tracking-widest">
+                <button className="bg-red-500 py-2 px-5 md:px-8 text-xl text-white font-medium mt-4 bebas tracking-widest">
                   <Link to="/login">Book Now</Link>
                 </button>
               )}
@@ -161,6 +204,7 @@ const Details = () => {
               alt="image"
               className="rounded-2xl"
             />
+            <img src={data.image} alt="image" className="rounded-2xl" />
           </div>
         </div>
       </div>
