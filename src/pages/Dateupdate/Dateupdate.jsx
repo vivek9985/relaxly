@@ -14,8 +14,6 @@ const Checkout = () => {
       checkIn,
       checkOut,
     };
-    // console.log(checkIn, checkOut);
-
     fetch(`http://localhost:4000/bookings/${_id}`, {
       method: "PUT",
       headers: {
@@ -27,7 +25,7 @@ const Checkout = () => {
         res.json();
       })
       .then((data) => {
-        toast.success("Updated Dated!");
+        toast.success("Updated Date!");
       });
   };
 
