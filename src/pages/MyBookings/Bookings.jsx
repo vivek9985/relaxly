@@ -22,18 +22,18 @@ const Bookings = ({ booking, deleteHandler }) => {
           Check Out : <span className="text-red-500">{checkOut}</span>
         </h2>
       </div>
-      <div className="flex lg:flex-col items-start lg:items-center justify-center gap-5 mt-6 md:mt-6 mb-8">
+      <div className="flex lg:flex-col lg:items-center justify-center gap-5 mb-10 lg:mb-0 mt-5 lg:mt-0">
         <button>
           <Link
             to={`/mybookings/${_id}`}
-            className="text-white bg-green-500 px-5 py-2 rounded-full"
+            className="text-white bg-green-500 hover:bg-gray-800 transition-all duration-500 px-5 py-2.5 rounded-full"
           >
             Update Date
           </Link>
         </button>
         <button
           onClick={() => deleteHandler(_id)}
-          className="text-white bg-red-500 px-5 py-2 rounded-full"
+          className="text-white bg-red-500 hover:bg-gray-800 transition-all duration-500 px-[44px] py-2.5 rounded-full"
         >
           Delete
         </button>

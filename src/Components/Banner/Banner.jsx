@@ -1,11 +1,22 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
     <div className="banner-bg bg-no-repeat bg-cover bg-center">
       <div className="pt-28 lg:pt-2 pb-40 text-center text-gray-100 bg-[#00000044]">
-        <div className="md:pt-10 lg:pt-40 lg:h-[240px]">
-          <h2 className="text-5xl lg:text-7xl bebas tracking-wider px-3">
+        <div className="md:pt-10 lg:pt-40 lg:h-[240px] overflow-hidden">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="text-5xl lg:text-7xl bebas tracking-wider px-3"
+          >
             <span className="hover:text-5xl transition-all duration-200">
               E
             </span>
@@ -85,20 +96,30 @@ const Banner = () => {
             </span>
           </h2>
         </div>
-        <p className="text-gray-100 w-11/12 md:w-8/12 mx-auto mt-4 mb-12">
-          Welcome to a world of unparalleled comfort and elegance at our
-          exquisite hotel. Nestled in the heart of New York, our establishment
-          offers a captivating blend of modern luxury, timeless charm, and
-          top-notch hospitality.Whether you're a weary traveler seeking a
-          restful refuge or a discerning guest in search of opulence, we are
-          here to exceed your expectations.
-        </p>
-        <Link
-          to="/rooms"
-          className="text-lg px-9 py-2.5 bg-red-500 hover:bg-white hover:text-gray-800 transition-all duration-500"
-        >
-          Book now
-        </Link>
+        <div className="overflow-hidden">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="900"
+            className="text-gray-100 w-11/12 md:w-8/12 mx-auto mt-4 mb-12"
+          >
+            Welcome to a world of unparalleled comfort and elegance at our
+            exquisite hotel. Nestled in the heart of New York, our establishment
+            offers a captivating blend of modern luxury, timeless charm, and
+            top-notch hospitality.Whether you're a weary traveler seeking a
+            restful refuge or a discerning guest in search of opulence, we are
+            here to exceed your expectations.
+          </p>
+        </div>
+        <div className="overflow-hidden py-4">
+          <div data-aos="fade-up" data-aos-duration="700">
+            <Link
+              to="/rooms"
+              className="text-lg px-9 py-2.5 bg-red-500 hover:bg-white hover:text-gray-800 transition-all duration-500"
+            >
+              Book now
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

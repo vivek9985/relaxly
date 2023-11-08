@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import img from "../../assets/review.png";
 import { BsFillPlayFill } from "react-icons/Bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Preview = () => {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
     <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 bg-[#1f3347] my-32">
       <div className="">
@@ -13,8 +19,12 @@ const Preview = () => {
           />
           <div className="w-full h-full absolute top-[90%] bottom-0 left-0 right-0 m-auto">
             <div className="flex items-center justify-center">
-              <div className="animation-play-btn relative">
-                <div className="w-[60px] h-[60px] bg-[#fff] rounded-full relative">
+              <div
+                className="animation-play-btn relative"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+              >
+                <div className="w-[60px] h-[60px] bg-[#fff] rounded-full">
                   <span
                     style={{ "--i": 0 }}
                     className="w-[60px] h-[60px] rounded-full absolute bg-[#fff] opacity-80"
@@ -28,7 +38,10 @@ const Preview = () => {
                     className="w-[60px] h-[60px] rounded-full absolute bg-[#fff] opacity-80"
                   ></span>
                   <div className="absolute right-0 left-1 top-0 bottom-0 flex items-center justify-center text-4xl cursor-pointer text-red-500 hover:rotate-[360deg] transition-all duration-500">
-                    <a href="https://www.youtube.com/watch?v=mJVuZiK9a6I" target="_blanck">
+                    <a
+                      href="https://www.youtube.com/watch?v=mJVuZiK9a6I"
+                      target="_blanck"
+                    >
                       <BsFillPlayFill></BsFillPlayFill>
                     </a>
                   </div>
@@ -39,9 +52,25 @@ const Preview = () => {
         </div>
       </div>
       <div className="text-white p-12">
-        <p className="text-xl text-red-500">Preview</p>
-        <h2 className="text-4xl mt-2 mb-4">Our Hotel Preview Video</h2>
-        <p className="text-gray-300">
+        <p
+          className="text-xl text-red-500"
+          data-aos="fade-left"
+          data-aos-duration="700"
+        >
+          Preview
+        </p>
+        <h2
+          className="text-4xl mt-2 mb-4"
+          data-aos="fade-left"
+          data-aos-duration="900"
+        >
+          Our Hotel Preview Video
+        </h2>
+        <p
+          className="text-gray-300"
+          data-aos="fade-left"
+          data-aos-duration="1100"
+        >
           Welcome to a world of unparalleled comfort and elegance at our
           exquisite hotel. Nestled in the heart of New York, our establishment
           offers a captivating blend of modern luxury, timeless charm, and
@@ -49,7 +78,8 @@ const Preview = () => {
           restful refuge or a discerning guest in search of opulence, we are
           here to exceed your expectations.
         </p>
-        <button className="text-lg px-9 py-2.5 bg-red-500 mt-6 text-white">
+        <button className="text-lg px-9 py-2.5 bg-red-500 mt-6 text-white"  data-aos="fade-left"
+          data-aos-duration="1300">
           Book Now
         </button>
       </div>

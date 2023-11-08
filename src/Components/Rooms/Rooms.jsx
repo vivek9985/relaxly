@@ -5,14 +5,20 @@ import roomThree from "../../assets/room-3.jpg";
 import roomFour from "../../assets/room-4.jpg";
 import roomFive from "../../assets/room-5.jpg";
 import roomSix from "../../assets/room-6.jpg";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Rooms = () => {
+  useEffect(() => {
+    Aos.init();
+  });
   return (
-    <div className="w-10/12 mx-auto mt-28">
+    <div className="w-10/12 mx-auto mt-28 overflow-hidden">
       <div className="text-center">
-        <p className="text-lg font-semibold text-red-500">Choose Your Rooms</p>
-        <h3 className="text-3xl font-semibold my-3">Featured Rooms</h3>
-        <p className="pb-10 mx-0 lg:mx-24 text-gray-600">
+        <p className="text-lg font-semibold text-red-500" data-aos="fade-up" data-aos-duration="400">Choose Your Rooms</p>
+        <h3 className="text-3xl font-semibold my-3" data-aos="fade-up" data-aos-duration="700">Featured Rooms</h3>
+        <p className="pb-10 mx-0 lg:mx-24 text-gray-600" data-aos="fade-up" data-aos-duration="900">
           Your safety and comfort are our priorities, which is why our
           meticulous selection process ensures each hotel meets stringent
           quality standards. Whether you’re visiting for business or leisure,
@@ -22,7 +28,7 @@ const Rooms = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-7 mt-5 md:mt-8 lg:mt-10">
         {/* card one */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-right" data-aos-duration="500">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -48,7 +54,7 @@ const Rooms = () => {
           </div>
         </div>
         {/* card two */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-up" data-aos-duration="700">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -74,7 +80,7 @@ const Rooms = () => {
           </div>
         </div>
         {/* card three */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-left" data-aos-duration="500">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -100,7 +106,7 @@ const Rooms = () => {
           </div>
         </div>
         {/* card four */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-right" data-aos-duration="500">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -126,7 +132,7 @@ const Rooms = () => {
           </div>
         </div>
         {/* card five */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-up" data-aos-duration="700">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -154,7 +160,7 @@ const Rooms = () => {
           </div>
         </div>
         {/* card six */}
-        <div className="p-4 border border-red-300">
+        <div className="p-4 border border-red-300" data-aos="fade-left" data-aos-duration="500">
           <div className="">
             <div className="overflow-hidden">
               <img
@@ -182,7 +188,7 @@ const Rooms = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-16" data-aos="fade-up" data-aos-duration="900">
         <Link
           to="rooms"
           className="bg-red-500 text-white text-lg font-medium px-8 py-3"

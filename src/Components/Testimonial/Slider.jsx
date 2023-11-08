@@ -6,8 +6,14 @@ import clientThree from "../../assets/client-3.jpg";
 import clientFour from "../../assets/client-4.jpg";
 import clientFive from "../../assets/client-5.jpg";
 import clientSix from "../../assets/client-6.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Slider = () => {
+  useEffect(() => {
+    Aos.init();
+  });
   const [sliderRef] = useKeenSlider({
     breakpoints: {
       "(min-width: 400px)": {
@@ -24,12 +30,14 @@ const Slider = () => {
       },
     },
     slides: { perView: 1 },
-  })
+  });
 
   return (
     <div
       ref={sliderRef}
-      className="keen-slider w-full mb-36 cursor-grab active:cursor-grabbing"
+      className="keen-slider w-full mb-36 cursor-grab active:cursor-grabbing overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="700"
     >
       <div className="keen-slider__slide text-center p-4 border border-gray-300 transition-colors duration-500 hover:border-red-300 rounded-2xl grayscale hover:grayscale-0">
         <div className="">
