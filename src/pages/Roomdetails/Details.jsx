@@ -183,9 +183,14 @@ const Details = () => {
                   Book Now
                 </button>
               ) : (
-                <button className="bg-red-500 py-2 px-5 md:px-8 text-xl text-white font-medium mt-4 bebas tracking-widest">
-                  <Link to="/login">Book Now</Link>
-                </button>
+                <div className="mt-6">
+                  <Link
+                    to="/login"
+                    className="bg-red-500 py-2 px-5 md:px-8 text-xl text-white font-medium bebas tracking-widest"
+                  >
+                    Book Now
+                  </Link>
+                </div>
               )}
             </div>
           </form>

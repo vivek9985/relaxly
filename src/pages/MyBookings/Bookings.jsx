@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 
 const Bookings = ({ booking, deleteHandler }) => {
   const { _id, roomImage, roomName, checkIn, checkOut } = booking || {};
-
- 
-
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 border border-red-300 rounded-2xl">
       <div className="m-4">
