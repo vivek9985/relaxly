@@ -6,6 +6,15 @@ import { AuthContext } from "../../Authprovider/Authprovider";
 const Details = () => {
   const { user } = useContext(AuthContext);
   const data = useLoaderData();
+
+  const bookHandler = (e) => {
+    e.preventDefault();
+    console.log("first");
+    const form = e.target;
+    const checkIn = form.checkin.value;
+    console.log(checkIn)
+  };
+
   return (
     <section className="w-[85%] mx-auto py-16 mb-28">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
@@ -26,7 +35,8 @@ const Details = () => {
             <span className="text-2xl font-semibold text-gray-700">
               {data.title}{" "}
             </span>
-            (<span className="text-green-600 text-xl">{data.availability}</span>)
+            (<span className="text-green-600 text-xl">{data.availability}</span>
+            )
           </h2>
           <div className="flex items-center mt-4 mb-3">
             <p className="text-xl text-red-500 font-semibold">${data.price} </p>
@@ -80,15 +90,49 @@ const Details = () => {
             </h2>
           </div>
           <p className="text-gray-500 mt-6 pr-2">{data.description}</p>
-          {user ? (
-            <button className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
-              <Link to="/checkout">Check out</Link>
-            </button>
-          ) : (
-            <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-8 bebas tracking-widest">
-              <Link to="/login">Check out</Link>
-            </button>
-          )}
+          <form className="grid grid-cols-2 gap-7 mt-10">
+            <div>
+              <label className="block mb-2 text-lg font-medium text-gray-900">
+                Check in
+              </label>
+              <input
+                type="date"
+                name="checkin"
+                id="checkin"
+                className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
+                placeholder="room's name"
+                required
+              />
+            </div>
+            <div>
+              <label className="block mb-2 text-lg font-medium text-gray-900">
+                Check out
+              </label>
+              <input
+                type="date"
+                name="checkout"
+                id="checkout"
+                className="bg-gray-50 border-b border-gray-400 focus:outline-none focus:border-red-500 text-gray-500 text-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 pr-10 pl-0"
+                placeholder="room's name"
+                required
+              />
+            </div>
+            <div>
+              {user ? (
+                <button
+                  onClick={bookHandler}
+                  type="submit"
+                  className="bg-red-500 hover:bg-green-400 hover:text-gray-700 transition-all duration-500 py-2 px-8 text-xl text-white font-medium mt-4 bebas tracking-widest"
+                >
+                  Book Now
+                </button>
+              ) : (
+                <button className="bg-red-500 py-2 px-8 text-xl text-white font-medium mt-4 bebas tracking-widest">
+                  <Link to="/login">Book Now</Link>
+                </button>
+              )}
+            </div>
+          </form>
         </div>
         <div className="mt-8">
           <h2 className="text-2xl font-medium">Contact</h2>

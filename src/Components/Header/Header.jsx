@@ -113,9 +113,15 @@ const Header = () => {
                     alt="image"
                     className="w-[30px] h-[30px] rounded-full cursor-pointer"
                   />
-                  <h2 className="text-gray-700 text-sm font-medium tracking-tight">
-                    {user?.displayName}
-                  </h2>
+                  <div>
+                    {user?.displayName ? (
+                      <h2 className="text-gray-700 text-sm font-medium tracking-tight">
+                        {user?.displayName}
+                      </h2>
+                    ) : (
+                      <h2></h2>
+                    )}
+                  </div>
                 </div>
               ) : (
                 <div className="flex justify-end">

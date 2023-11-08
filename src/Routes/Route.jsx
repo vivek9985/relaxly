@@ -11,6 +11,7 @@ import Contact from "../pages/Contact/Contact";
 import Testimonials from "../pages/Testimonials/Testimonials";
 import MyBookings from "../pages/MyBookings/MyBookings";
 import Error from "../pages/Error/Error";
+import Checkout from "../pages/Checkout/Checkout";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,16 @@ const router = createBrowserRouter([
             <MyBookings></MyBookings>
           </Privateroute>
         ),
+      },
+      {
+        path: "/checkout/:id",
+        element: (
+          <Privateroute>
+            <Checkout></Checkout>
+          </Privateroute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:4000/checkout/${params.id}`),
       },
       {
         path: "/login",

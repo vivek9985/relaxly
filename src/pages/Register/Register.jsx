@@ -7,19 +7,26 @@ import { AuthContext } from "../../Authprovider/Authprovider";
 const Register = () => {
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
-  const { createUser, loginwithGoogle } = useContext(AuthContext);
+  const { createUser, loginwithGoogle, updateProfile } =
+    useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const loginHandler = (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
+    const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
+    console.log(name, photo)
 
     createUser(email, password)
       .then((res) => {
-        console.log(res);
+        console.log(res.user);
+        updateProfile(res.user, {
+          displayName: name,
+          photoURL: photo
+        });
         form.reset();
         navigate(location?.state ? location.state : "/");
       })
@@ -59,6 +66,19 @@ const Register = () => {
                 id="name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none block w-full p-2.5"
                 placeholder="Your name"
+                required
+              />
+            </div>
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-900">
+                Photo URL
+              </label>
+              <input
+                type="url"
+                name="photo"
+                id="photo"
+                className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:outline-none block w-full p-2.5"
+                placeholder="Your photo url"
                 required
               />
             </div>
