@@ -6,7 +6,7 @@ import {
   BiLogoYoutube,
   BiSolidPhoneCall,
 } from "react-icons/Bi";
-import { HiOutlineMail } from "react-icons/Hi";
+import { HiLocationMarker, HiOutlineMail } from "react-icons/Hi";
 
 const Footer = () => {
   return (
@@ -57,7 +57,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center">
-            <HiOutlineMail className="text-xl md:text-2xl mr-1 text-red-400"></HiOutlineMail>
+            <HiLocationMarker className="text-xl md:text-2xl mr-1 text-red-400"></HiLocationMarker>
             <h2 className="text-lg md:text-xl font-medium text-gray-900">
               Address :
             </h2>
