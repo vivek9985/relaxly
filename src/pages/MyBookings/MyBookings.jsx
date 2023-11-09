@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import Bookings from "./Bookings";
 import swal from "sweetalert";
+import Title from './../../Components/Title/Title';
 
 const MyBookings = () => {
   const { user } = useContext(AuthContext);
@@ -44,6 +45,7 @@ const MyBookings = () => {
 
   return (
     <section className="w-[85%] mx-auto">
+      <Title title="My Bookings"></Title>
       <h2 className="text-5xl font-semibold text-center my-14">
         My <span className="text-red-500">Bookings</span>
       </h2>

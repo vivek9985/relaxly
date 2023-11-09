@@ -1,14 +1,18 @@
 import { Link, useLoaderData } from "react-router-dom";
+import Title from "./../../Components/Title/Title";
 
 const Room = () => {
   const datas = useLoaderData();
   return (
     <section className="w-[85%] mx-auto">
+      <Title title="Rooms"></Title>
       <h2 className="text-5xl font-bold text-center mt-12 mb-20">
         Luxury <span className="text-red-500">Rooms</span>
       </h2>
       <div className="flex items-center justify-end">
-        <h2 className="bg-gray-300 hover:bg-red-400 hover:text-gray-800 py-2 px-8 text-lg font-medium transition-all duration-300 rounded-lg cursor-pointer text-gray-600">Filter by price</h2>
+        <h2 className="bg-gray-300 hover:bg-red-400 hover:text-gray-800 py-2 px-8 text-lg font-medium transition-all duration-300 rounded-lg cursor-pointer text-gray-600">
+          Filter by price
+        </h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-7 mt-5 md:mt-8 lg:mt-10 mb-40">
         {datas.map((data) => (

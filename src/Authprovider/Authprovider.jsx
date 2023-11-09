@@ -47,14 +47,14 @@ const Authprovider = ({ children }) => {
         axios.post("http://localhost:4000/jwt", loggedUser,
          {withCredentials: true,})
           .then((res) => {
-            console.log("token response", res.data);
+            // console.log(res.data);
           });
       } else {
         axios.post("http://localhost:4000/logout", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
           });
       }
     });

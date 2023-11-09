@@ -1,5 +1,6 @@
 import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
+import Title from './../../Components/Title/Title';
 
 const Checkout = () => {
   const data = useLoaderData();
@@ -31,6 +32,7 @@ const Checkout = () => {
 
   return (
     <section className="w-[85%] mx-auto">
+      <Title title="Date update"></Title>
       <h1 className="text-4xl md:text-5xl font-semibold text-center my-14">
         Update <span className="text-red-500">Date</span>
       </h1>

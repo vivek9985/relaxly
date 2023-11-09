@@ -1,9 +1,11 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Link } from "react-router-dom";
+import Title from './../../Components/Title/Title';
 
 const Error = () => {
   return (
     <section>
+      <Title title="Error"></Title>
       <div className="flex justify-center mt-28">
         <Link
           to="/"

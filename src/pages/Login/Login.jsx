@@ -4,6 +4,7 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/Ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import toast from "react-hot-toast";
+import Title from './../../Components/Title/Title';
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -29,6 +30,7 @@ const Login = () => {
   };
   return (
     <section className="w-full px-2 md:px-0 lg:w-11/12 xl:w-10/12 h-auto mx-auto mt-2 lg:mt-20 grid justify-between grid-cols-1 lg:grid-cols-2 rounded-2xl pb-32 overflow-hidden">
+      <Title title="Login"></Title>
       <div className="-z-10">
         <div className="w-full h-full flex items-center justify-center rounded-3xl overflow-hidden">
           <Player

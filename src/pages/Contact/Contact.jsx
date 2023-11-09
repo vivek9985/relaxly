@@ -1,11 +1,13 @@
 import { HiLocationMarker, HiOutlineMail } from "react-icons/Hi";
 import contact from "../../assets/contact.webp";
 import { BiSolidPhoneCall } from "react-icons/Bi";
+import Title from "./../../Components/Title/Title";
 
 const Contact = () => {
   return (
-    <div className="w-[85%] mx-auto my-16">
-      <h2 className="text-4xl text-center font-semibold mb-14">
+    <section className="w-[85%] mx-auto my-16">
+      <Title title="Contact us"></Title>
+      <h2 className="text-4xl lg:text-5xl  text-center font-semibold mb-14">
         Contact <span className="text-red-500">Us</span>
       </h2>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 pt-4">
@@ -58,7 +60,7 @@ const Contact = () => {
           <img src={contact} alt="image" className="w-full rounded-2xl" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

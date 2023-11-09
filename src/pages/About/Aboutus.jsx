@@ -1,7 +1,10 @@
+import Title from "../../Components/Title/Title";
+
 const Aboutus = () => {
   return (
     <section className="w-11/12 md:w-10/12 mx-auto mb-40">
-      <h2 className="text-center text-5xl font-semibold mt-14 mb-8">
+      <Title title="About us"></Title>
+      <h2 className="text-center text-4xl lg:text-5xl font-semibold mt-14 mb-8">
         About Us
       </h2>
       <p className="text-center text-gray-600">
@@ -11,7 +14,9 @@ const Aboutus = () => {
         romantic getaway, or a family holiday, our website is designed to make
         your hotel booking experience as seamless and enjoyable as possible.
       </p>
-      <h3 className="text-center mt-10 mb-4 text-3xl font-medium text-gray-700">History</h3>
+      <h3 className="text-center mt-10 mb-4 text-3xl font-medium text-gray-700">
+        History
+      </h3>
       <p className="text-center text-gray-600 mb-40">
         Take the visitors on your website to a trip down memory lane, and give
         them an insight to the history behind your store. Here, you can show

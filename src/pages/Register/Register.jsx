@@ -4,6 +4,7 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/Ai";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import toast from "react-hot-toast";
+import Title from './../../Components/Title/Title';
 
 const Register = () => {
   const [password, setPassword] = useState("");
@@ -49,6 +50,7 @@ const Register = () => {
   };
   return (
     <section className="flex items-center justify-center mt-6 mb-20">
+      <Title title="Register"></Title>
       <div className="w-11/12 md:w-10/12 lg:w-7/12 border border-gray-300 rounded-2xl my-10">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">

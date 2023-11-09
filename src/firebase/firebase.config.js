@@ -3,15 +3,18 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+const all = import.meta.env;
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyANodMTiEMn7xwoji5kH_WBLjdPfLIucyk",
-  authDomain: "relaxly-auth.firebaseapp.com",
-  projectId: "relaxly-auth",
-  storageBucket: "relaxly-auth.appspot.com",
-  messagingSenderId: "939921128974",
-  appId: "1:939921128974:web:847ba7c2580937a09b065f"
+  apiKey: all.VITE_apiKey,
+  authDomain: all.VITE_authDomain,
+  projectId: all.VITE_projectId,
+  storageBucket: all.VITE_storageBucket,
+  messagingSenderId: all.VITE_messagingSenderId,
+  appId: all.VITE_appId,
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
