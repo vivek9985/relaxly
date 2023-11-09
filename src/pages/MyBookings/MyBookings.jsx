@@ -8,7 +8,7 @@ const MyBookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:4000/bookings?email=${user?.email}`, {credentials: "include"})
+    fetch(`https://hotel-booking-server-iota.vercel.app/bookings?email=${user?.email}`, {credentials: "include"})
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);
@@ -21,7 +21,7 @@ const MyBookings = () => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:4000/bookings/${id}`, {
+        fetch(`https://hotel-booking-server-iota.vercel.app/bookings/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

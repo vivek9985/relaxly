@@ -15,7 +15,7 @@ const Checkout = () => {
       checkIn,
       checkOut,
     };
-    fetch(`http://localhost:4000/bookings/${_id}`, {
+    fetch(`https://hotel-booking-server-iota.vercel.app/bookings/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -44,13 +44,13 @@ const Authprovider = ({ children }) => {
       setUser(currentUser);
       setLoading(false);
       if (currentUser) {
-        axios.post("http://localhost:4000/jwt", loggedUser,
+        axios.post("https://hotel-booking-server-iota.vercel.app/jwt", loggedUser,
          {withCredentials: true,})
           .then((res) => {
             // console.log(res.data);
           });
       } else {
-        axios.post("http://localhost:4000/logout", loggedUser, {
+        axios.post("https://hotel-booking-server-iota.vercel.app/logout", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {

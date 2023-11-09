@@ -9,7 +9,7 @@ const Room = () => {
       <h2 className="text-5xl font-bold text-center mt-12 mb-20">
         Luxury <span className="text-red-500">Rooms</span>
       </h2>
-      <div className="flex items-center justify-end">
+      <div className="hidden">
         <h2 className="bg-gray-300 hover:bg-red-400 hover:text-gray-800 py-2 px-8 text-lg font-medium transition-all duration-300 rounded-lg cursor-pointer text-gray-600">
           Filter by price
         </h2>

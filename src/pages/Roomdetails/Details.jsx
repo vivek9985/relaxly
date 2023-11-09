@@ -13,7 +13,7 @@ const Details = () => {
   // console.log(reviews);
 
   useEffect(() => {
-    fetch("http://localhost:4000/reviews")
+    fetch("https://hotel-booking-server-iota.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
@@ -39,7 +39,7 @@ const Details = () => {
       price: data.price,
       description: data.description,
     };
-    fetch("http://localhost:4000/bookings", {
+    fetch("https://hotel-booking-server-iota.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -69,7 +69,7 @@ const Details = () => {
       roomName: data.title,
     };
     console.log(review);
-    fetch("http://localhost:4000/reviews", {
+    fetch("https://hotel-booking-server-iota.vercel.app/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

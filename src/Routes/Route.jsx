@@ -38,13 +38,13 @@ const router = createBrowserRouter([
       {
         path: "/rooms",
         element: <Room></Room>,
-        loader: () => fetch("http://localhost:4000/rooms"),
+        loader: () => fetch("https://hotel-booking-server-iota.vercel.app/rooms"),
       },
       {
         path: "/rooms/:id",
         element: <Details></Details>,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/rooms/${params.id}`),
+          fetch(`https://hotel-booking-server-iota.vercel.app/rooms/${params.id}`),
       },
       {
         path: "/mybookings",
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
           </Privateroute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/bookings/${params.id}`),
+          fetch(`https://hotel-booking-server-iota.vercel.app/bookings/${params.id}`),
       },
       {
         path: "/login",
