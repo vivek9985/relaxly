@@ -2,13 +2,16 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import Bookings from "./Bookings";
 import swal from "sweetalert";
-import Title from './../../Components/Title/Title';
+import Title from "./../../Components/Title/Title";
 
 const MyBookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
   useEffect(() => {
-    fetch(`https://hotel-booking-server-iota.vercel.app/bookings?email=${user?.email}`, {credentials: "include"})
+    fetch(
+      `https://hotel-booking-server-iota.vercel.app/bookings?email=${user?.email}`,
+      { credentials: "include" }
+    )
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, []);

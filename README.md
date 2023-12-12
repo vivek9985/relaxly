@@ -7,4 +7,4 @@
 - Used react-hot-toast as for alert.
 
 
-## Live link : [(https://relaxly-modern-hotel.surge.sh/)]
+## Live link : [()]
