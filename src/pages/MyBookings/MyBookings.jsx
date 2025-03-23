@@ -48,7 +48,7 @@ const MyBookings = () => {
 
   return (
     <section className="w-[85%] mx-auto">
-      <Title title="My Bookings"></Title>
+      <Title title="Relaxly - My Bookings"></Title>
       <h2 className="text-5xl font-semibold text-center my-14">
         My <span className="text-red-500">Bookings</span>
       </h2>

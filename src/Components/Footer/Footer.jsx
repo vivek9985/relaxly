@@ -10,8 +10,8 @@ import { HiLocationMarker, HiOutlineMail } from "react-icons/Hi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#0000001a]">
-      <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2">
+    <footer className="bg-[#0000001a] px-10">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="py-10">
           <img src={logo} alt="image" className="w-28" />
           <ul className="flex text-xl gap-3 mt-6">
@@ -68,13 +68,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center pb-10">
-        <div className="w-full h-px bg-red-300 mb-10"></div>
+        <div className="w-full mx-auto h-px bg-red-300 mb-10"></div>
         <p className="px-20">
           Copyright © 2023. All rights reserved by{" "}
           <span className="text-red-600">Relaxly</span>
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

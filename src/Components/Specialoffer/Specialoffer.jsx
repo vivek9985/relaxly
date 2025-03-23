@@ -11,7 +11,7 @@ const Specialoffer = () => {
     Aos.init();
   });
   return (
-    <section className="w-10/12 mx-auto mt-28">
+    <section className="max-w-[1400px] w-10/12 mx-auto mt-28">
       <div className="text-center">
         <p
           className="text-lg font-semibold text-red-500"
@@ -35,7 +35,11 @@ const Specialoffer = () => {
           data-aos-duration="800"
         >
           <div>
-            <img src={tour} alt="image" className="w-full h-[300px]" />
+            <img
+              src={tour}
+              alt="image"
+              className="w-full h-[300px] object-cover"
+            />
           </div>
           <div className="w-full h-full absolute top-0 bg-gradient-to-t from-[#ff000000] to-[#000000e8] px-5 pt-8 pb-5 text-white">
             <h2 className="text-4xl font-medium">World Tour</h2>
@@ -54,7 +58,11 @@ const Specialoffer = () => {
           data-aos-duration="1400"
         >
           <div>
-            <img src={ballon} alt="image" className="w-full h-[270px]" />
+            <img
+              src={ballon}
+              alt="image"
+              className="w-full h-[270px] object-cover"
+            />
           </div>
           <div className="w-full absolute top-0 bg-gradient-to-t from-[#ff000000] to-[#000000e8] h-full px-5 pt-8 pb-5 text-white">
             <h2 className="text-4xl font-medium">Hot Air Balloon</h2>
@@ -73,7 +81,11 @@ const Specialoffer = () => {
           data-aos-duration="2000"
         >
           <div>
-            <img src={mountain} alt="image" className="w-full h-[270px]" />
+            <img
+              src={mountain}
+              alt="image"
+              className="w-full h-[270px] object-cover"
+            />
           </div>
           <div className="w-full absolute top-0 bg-gradient-to-t from-[#ff000000] to-[#000000e8] h-full px-5 pt-8 pb-5 text-white">
             <h2 className="text-4xl font-medium">Mountainous Offer</h2>

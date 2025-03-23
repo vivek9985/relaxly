@@ -3,9 +3,33 @@ import Title from "./../../Components/Title/Title";
 
 const Room = () => {
   const datas = useLoaderData();
+  // const [rooms, setRooms] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
+
+  // useEffect(() => {
+  //   fetch("https://hotel-booking-server-iota.vercel.app/rooms")
+  //     .then((response) => {
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch rooms");
+  //       }
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setRooms(data);
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       setError(err.message);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
+  // if (loading) return <p>Loading rooms...</p>;
+  // if (error) return <p>Error: {error}</p>;
   return (
     <section className="w-[85%] mx-auto">
-      <Title title="Rooms"></Title>
+      <Title title="Relaxly - Rooms"></Title>
       <h2 className="text-5xl font-bold text-center mt-12 mb-20">
         Luxury <span className="text-red-500">Rooms</span>
       </h2>

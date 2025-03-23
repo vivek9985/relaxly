@@ -5,7 +5,7 @@ import Title from './../../Components/Title/Title';
 const Error = () => {
   return (
     <section>
-      <Title title="Error"></Title>
+      <Title title="Relaxly - Error"></Title>
       <div className="flex justify-center mt-28">
         <Link
           to="/"

@@ -2,6 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
+import { Button } from "../Utils/Button";
 
 const Banner = () => {
   useEffect(() => {
@@ -100,7 +101,7 @@ const Banner = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="900"
-            className="text-gray-100 w-11/12 md:w-8/12 mx-auto mt-4 mb-12"
+            className="text-gray-100 max-w-[1000px] w-11/12 md:w-8/12 mx-auto mt-4 mb-12"
           >
             Welcome to a world of unparalleled comfort and elegance at our
             exquisite hotel. Nestled in the heart of New York, our establishment
@@ -112,12 +113,7 @@ const Banner = () => {
         </div>
         <div className="overflow-hidden py-4">
           <div data-aos="fade-up" data-aos-duration="700">
-            <Link
-              to="/rooms"
-              className="text-lg px-9 py-2.5 bg-red-500 hover:bg-white hover:text-gray-800 transition-all duration-500"
-            >
-              Book now
-            </Link>
+           <Button link="/rooms" text="Book now" />
           </div>
         </div>
       </div>

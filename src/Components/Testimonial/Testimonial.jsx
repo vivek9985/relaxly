@@ -8,7 +8,7 @@ const Testimonial = () => {
     Aos.init();
   });
   return (
-    <div className="w-10/12 md:w-9/12 mx-auto">
+    <div className="max-w-[1400px] w-10/12 md:w-9/12 mx-auto">
       <div className="text-center">
         <p
           className="text-lg font-semibold text-red-500"
@@ -25,7 +25,7 @@ const Testimonial = () => {
           What Our Clients Says
         </h3>
         <p
-          className="pb-10 mx-0 lg:mx-24 text-gray-600"
+          className="max-w-[800px] mx-auto pb-10 text-gray-600"
           data-aos="fade-up"
           data-aos-duration="1100"
         >

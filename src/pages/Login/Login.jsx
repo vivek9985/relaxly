@@ -30,7 +30,7 @@ const Login = () => {
   };
   return (
     <section className="w-full px-2 md:px-0 lg:w-11/12 xl:w-10/12 h-auto mx-auto mt-2 lg:mt-20 grid justify-between grid-cols-1 lg:grid-cols-2 rounded-2xl pb-32 overflow-hidden">
-      <Title title="Login"></Title>
+      <Title title="Relaxly - Login"></Title>
       <div className="-z-10">
         <div className="w-full h-full flex items-center justify-center rounded-3xl overflow-hidden">
           <Player
@@ -42,7 +42,7 @@ const Login = () => {
         </div>
       </div>
       <div className="w-11/12 mx-auto flex flex-col items-center lg:items-start justify-center py-8 lg:py-0">
-        <div className="w-11/12 mx-auto shadow md:mt-0 sm:max-w-md xl:p-0">
+        <div className="w-11/12 mx-auto shadow md:mt-0 sm:max-w-md xl:p-0 rounded-3xl">
           <div className="w-full bg-transparent border border-gray-400 p-5 space-y-4 md:space-y-6 sm:p-8 rounded-3xl">
             <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl mb-9">
               Login

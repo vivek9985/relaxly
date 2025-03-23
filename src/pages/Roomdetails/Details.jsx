@@ -86,7 +86,7 @@ const Details = () => {
 
   return (
     <section className="w-[85%] mx-auto py-16 mb-28">
-      <Title title="Room details"></Title>
+      <Title title="Relaxly - Room details"></Title>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
         <div className="col-span-2 relative">
           <img

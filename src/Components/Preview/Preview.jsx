@@ -4,6 +4,7 @@ import { BsFillPlayFill } from "react-icons/Bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { IoClose } from "react-icons/io5";
+import { Button } from './../Utils/Button';
 
 const Preview = () => {
   const [open, setOpen] = useState(false);
@@ -19,13 +20,13 @@ const Preview = () => {
   };
 
   return (
-    <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 bg-[#1f3347] my-32">
+    <div className="max-w-[1400px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 bg-[#1f3347] my-32">
       <div className="">
         <div className="relative overflow-hidden">
           <img
             src={img}
             alt="image"
-            className="w-full h-[400px] md:h-[500px] lg:h-[550px]"
+            className="w-full h-[400px] md:h-[500px] lg:h-[550px] object-cover"
           />
           <div className="w-full h-full absolute top-[90%] bottom-0 left-0 right-0 m-auto">
             <div className="flex items-center justify-center">
@@ -75,7 +76,7 @@ const Preview = () => {
           Our Hotel Preview Video
         </h2>
         <p
-          className="text-gray-300"
+          className="max-w-[800px] text-gray-300"
           data-aos="fade-left"
           data-aos-duration="1100"
         >
@@ -86,13 +87,9 @@ const Preview = () => {
           restful refuge or a discerning guest in search of opulence, we are
           here to exceed your expectations.
         </p>
-        <button
-          className="text-lg px-9 py-2.5 bg-red-500 mt-6 text-white"
-          data-aos="fade-left"
-          data-aos-duration="1300"
-        >
-          Book Now
-        </button>
+        <div className="mt-12" data-aos="fade-left" data-aos-duration="1300">
+          <Button link="/rooms" text="Explore More" />
+        </div>
       </div>
       {open ? (
         <div className="fixed w-full h-full flex items-center justify-center bg-[#ffffffad] top-0 bottom-0 left-0 right-0 m-auto z-50">

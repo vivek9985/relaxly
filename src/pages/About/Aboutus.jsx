@@ -3,7 +3,7 @@ import Title from "../../Components/Title/Title";
 const Aboutus = () => {
   return (
     <section className="w-11/12 md:w-10/12 mx-auto mb-40">
-      <Title title="About us"></Title>
+      <Title title="Relaxly - About us"></Title>
       <h2 className="text-center text-4xl lg:text-5xl font-semibold mt-14 mb-8">
         About Us
       </h2>

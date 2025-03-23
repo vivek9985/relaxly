@@ -90,7 +90,7 @@ const Header = () => {
   return (
     <section className="border-b border-gray-200">
       <div className="w-full py-2 bg-rose-100">
-        <div className="w-[95%] sm:w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-3">
+        <div className="max-w-[1400px] w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-3">
           <div className="flex items-center justify-between sm:justify-start gap-2 col-span-2">
             {user ? (
               <button
@@ -136,7 +136,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-[85%] mx-auto py-5 grid grid-cols-3">
+      <div className="max-w-[1400px] w-[95%] mx-auto py-5 grid grid-cols-3">
         <div className="flex items-center justify-start col-span-1">
           <Link to="/">
             <img
@@ -147,7 +147,7 @@ const Header = () => {
           </Link>
         </div>
         <nav className="hidden lg:flex items-center justify-end col-span-2">
-          <ul className="flex gap-4 font-semibold uppercase">{menu}</ul>
+          <ul className="flex items-center justify-end gap-4 font-semibold uppercase">{menu}</ul>
         </nav>
         <div className="lg:hidden col-span-2">
           <div className="flex justify-end">

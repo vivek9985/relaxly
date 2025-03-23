@@ -8,17 +8,34 @@ import roomSix from "../../assets/room-6.jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Button } from "../Utils/Button";
 
 const Rooms = () => {
   useEffect(() => {
     Aos.init();
   });
   return (
-    <div className="w-10/12 mx-auto mt-28 overflow-hidden">
+    <div className="max-w-[1400px] w-10/12 mx-auto mt-28 overflow-hidden">
       <div className="text-center">
-        <p className="text-lg font-semibold text-red-500" data-aos="fade-up" data-aos-duration="400">Choose Your Rooms</p>
-        <h3 className="text-3xl font-semibold my-3" data-aos="fade-up" data-aos-duration="700">Featured Rooms</h3>
-        <p className="pb-10 mx-0 lg:mx-24 text-gray-600" data-aos="fade-up" data-aos-duration="900">
+        <p
+          className="text-lg font-semibold text-red-500"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
+          Choose Your Rooms
+        </p>
+        <h3
+          className="text-3xl font-semibold my-3"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          Featured Rooms
+        </h3>
+        <p
+          className="max-w-[800px] mx-auto pb-10 text-gray-600"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
           Your safety and comfort are our priorities, which is why our
           meticulous selection process ensures each hotel meets stringent
           quality standards. Whether you’re visiting for business or leisure,
@@ -28,13 +45,17 @@ const Rooms = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-7 mt-5 md:mt-8 lg:mt-10">
         {/* card one */}
-        <div className="p-4 border border-red-300" data-aos="fade-right" data-aos-duration="500">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomOne}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">Deluxe Single Room</h3>
@@ -54,13 +75,17 @@ const Rooms = () => {
           </div>
         </div>
         {/* card two */}
-        <div className="p-4 border border-red-300" data-aos="fade-up" data-aos-duration="700">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomTwo}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">Deluxe Family Suite</h3>
@@ -80,13 +105,17 @@ const Rooms = () => {
           </div>
         </div>
         {/* card three */}
-        <div className="p-4 border border-red-300" data-aos="fade-left" data-aos-duration="500">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomThree}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">Honeymoon Suite</h3>
@@ -106,13 +135,17 @@ const Rooms = () => {
           </div>
         </div>
         {/* card four */}
-        <div className="p-4 border border-red-300" data-aos="fade-right" data-aos-duration="500">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomFour}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">Twin Premium Room</h3>
@@ -132,13 +165,17 @@ const Rooms = () => {
           </div>
         </div>
         {/* card five */}
-        <div className="p-4 border border-red-300" data-aos="fade-up" data-aos-duration="700">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomFive}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">
@@ -160,13 +197,17 @@ const Rooms = () => {
           </div>
         </div>
         {/* card six */}
-        <div className="p-4 border border-red-300" data-aos="fade-left" data-aos-duration="500">
+        <div
+          className="p-4 border border-red-300"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           <div className="">
             <div className="overflow-hidden">
               <img
                 src={roomSix}
                 alt="image"
-                className="w-full h-[250px] scale-100 hover:scale-110 transition-all duration-700"
+                className="w-full h-[250px] scale-100 hover:scale-125 transition-all duration-700 object-cover"
               />
             </div>
             <h3 className="text-xl font-semibold pt-4">
@@ -188,13 +229,12 @@ const Rooms = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-16" data-aos="fade-up" data-aos-duration="900">
-        <Link
-          to="rooms"
-          className="bg-red-500 text-white text-lg font-medium px-8 py-3"
-        >
-          Explore More
-        </Link>
+      <div
+        className="flex justify-center mt-16"
+        data-aos="fade-up"
+        data-aos-duration="900"
+      >
+       <Button link="/rooms" text="Explore More"  />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const Newsletter = () => {
     Aos.init();
   });
   return (
-    <div className="w-10/12 md:w-9/12 mx-auto news-bg bg-no-repeat bg-cover bg-center mt-20 mb-36 rounded-2xl overflow-hidden">
+    <div className="max-w-[1400px] w-10/12 md:w-9/12 mx-auto news-bg bg-no-repeat bg-cover bg-center mt-20 mb-36 rounded-2xl overflow-hidden">
       <div className="text-center text-white py-4">
         <h2
           className="text-2xl sm:text-3xl md:text-4xl font-semibold pt-20 pb-4 px-5"
